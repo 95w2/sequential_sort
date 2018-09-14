@@ -8,9 +8,11 @@ students = easygui.multenterbox(msg, title, names)
 wall = 0
 copy = 0
 copyIndex = 0
+sortd = 0
 
 print(students)
-while wall+1 < len(students):
+while sortd = 0:
+	sortd = 1
 	copy = students[wall]
 	copyIndex = wall
 	#in the case that array[wall] is already in correct position
@@ -18,6 +20,10 @@ while wall+1 < len(students):
 		if copy > students[i]:
 			copy = students[i]
 			copyIndex = i
+
+			if students[i-1] > students[i]:
+				sortd = 0
+				#if sortd is never set to 0, rest of array is sorted
 	students[copyIndex] = students[wall]
 	students[wall] = copy
 	#swap these		
