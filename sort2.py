@@ -11,7 +11,7 @@ copyIndex = 0
 sortd = 0
 
 print(students)
-while sortd = 0:
+while sortd == 0:
 	sortd = 1
 	copy = students[wall]
 	copyIndex = wall
@@ -21,9 +21,9 @@ while sortd = 0:
 			copy = students[i]
 			copyIndex = i
 
-			if students[i-1] > students[i]:
-				sortd = 0
-				#if sortd is never set to 0, rest of array is sorted
+		if students[i-1] > students[i]:
+			sortd = 0
+			#if sortd is never set to 0, rest of array is sorted
 	students[copyIndex] = students[wall]
 	students[wall] = copy
 	#swap these		
